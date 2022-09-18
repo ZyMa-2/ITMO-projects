@@ -1,0 +1,25 @@
+	1 task:
+       2 total
+       1 ./scrafty7/blastoise/lopunny3/ekans
+       1 ./lopunny3/ekans
+	2 task:
+bayleef
+chimecho
+ekans
+	3 task:
+Развитые
+способности	Guts
+	4 task:
+     1	Живет	Grassland Marsh
+     1	Живет	Grassland Marsh
+	5 task:
+      10 total
+       4 scrafty7/pupitar/watchog0
+       2 scrafty7/luxray
+       2 scrafty7/blastoise/lopunny3/bayleef
+       1 scrafty7/blastoise/lopunny3/ekans
+       1 scrafty7/blastoise/lopunny3/chimecho
+	6 task:
+-rwx------  1 s373750  studs   17 18 сент. 14:25 porygon23
+-rwx------  1 s373750  studs   36 18 сент. 14:25 porygonz
+-rwx------  2 s373750  studs  208 18 сент. 14:25 porygonzwatchog

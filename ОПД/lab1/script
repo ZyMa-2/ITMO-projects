@@ -1,0 +1,165 @@
+#!/bin/bash
+
+#
+#	Часть 1
+#
+
+cd ..
+mkdir lab0
+cd lab0
+mkdir lopunny3
+mkdir scrafty7
+mkdir sneasel5
+touch magmar7
+touch porygon23
+touch watchog0
+echo "Возможности" >> magmar7
+echo "Overland=6 Jump=3 Power=4 Intelligence=4 Egg Warmer=0 Firestarter=0" >> magmar7
+echo "Glow=0 Heater=0 Sinker=0" >> magmar7
+echo "Живет	Urban" >> porygon23
+echo "Ходы" >> watchog0
+echo "After You Aqua Tail Covet Endeavor Fire Punch Gunk Shot Helping Hand" >> watchog0
+echo "Ice Punch Iron Tail Knock Off Last Resort Low Kick≠ Seed Bomb Signal" >> watchog0
+echo "Beam Sleep Talk Snore Super Fang Thunderpunch Zen Headbutt" >> watchog0
+
+cd lopunny3
+touch ekans
+touch bayleef
+touch chimecho
+echo "Живет	Grassland Marsh" >> ekans
+echo "Живет	Forest" >> bayleef
+echo "Grassland" >> bayleef
+echo "Тип Покемона	PSYCHIC NONE" >> chimecho
+cd ..
+
+cd scrafty7
+mkdir electivire
+mkdir pupitar
+touch luxray
+mkdir weedle
+mkdir blastoise
+echo "Развитые" >> luxray
+echo "способности	Guts" >> luxray
+cd ..
+cd sneasel5
+touch misdreavus
+mkdir espeon
+touch luxio
+touch croagunk
+touch porygonz
+echo "weigth=2.2 height=28.0 atk=6" >> misdreavus
+echo "def=6" >> misdreavus
+echo "Способности	Overcharge Intimidate" >> luxio
+echo "Rivalry" >> luxio
+echo "Возможности	Overland=7 Surface=6 Jump=4 Power=2" >> croagunk
+echo "Intelligence=4" >> croagunk
+echo "Тип покемона	NORMAL MODE" >> porygonz
+cd ..
+pwd # debug - выводит текущую директорию в stdout
+
+#
+#	Часть 2
+#
+
+chmod 752 lopunny3
+chmod 624 lopunny3/ekans
+chmod a=---,u=r lopunny3/bayleef
+chmod a=---,u=rw lopunny3/chimecho
+chmod 062 magmar7
+chmod a=r porygon23
+chmod 315 scrafty7
+chmod 512 scrafty7/electivire
+chmod 305 scrafty7/pupitar
+chmod 400 scrafty7/luxray
+chmod 330 scrafty7/weedle
+chmod 777 scrafty7/blastoise
+chmod 777 sneasel5
+chmod 044 sneasel5/misdreavus
+chmod 511 sneasel5/espeon
+chmod 440 sneasel5/luxio
+chmod 006 sneasel5/croagunk
+chmod 400 sneasel5/porygonz
+chmod 400 watchog0
+pwd # debug - выводит текущую директорию в stdout
+
+#
+#	Часть 3
+#
+
+chmod -R 700 .
+touch ../opd_lab0/hierarchy.txt	
+
+cp porygon23 sneasel5/misdreavusporygon2
+ln watchog0 sneasel5/porygonzwatchog
+cat scrafty7/luxray lopunny3/chimecho > watchog0_77
+ln -s sneasel5 Copy_7
+ln -s /home/studs/s373750/lab0/watchog0 scrafty7/luxraywatchog
+cp -r lopunny3 scrafty7/blastoise/
+cp watchog0 scrafty7/pupitar/
+
+ls -lR >> ../opd_lab0/hierarchy.txt
+pwd # debug - выводит текущую директорию в stdout
+
+#
+#	Часть 4
+#
+
+cd ../opd_lab0
+touch output.txt
+cd ..
+cd lab0
+
+echo "	1 task:"  >> ../opd_lab0/output.txt 2>> ../opd_lab0/output.txt
+(wc -l `find . -type f -name 'e*'` | sort -rnk 1)  >> ../opd_lab0/output.txt 2>> ../opd_lab0/output.txt
+
+echo "	2 task:"  >> ../opd_lab0/output.txt 2>> ../opd_lab0/output.txt
+(ls -R lopunny3 | sort)  >> ../opd_lab0/output.txt 2>> ../opd_lab0/output.txt
+
+echo "	3 task:"  >> ../opd_lab0/output.txt 2>> ../opd_lab0/output.txt
+(cat `find scrafty7 -maxdepth 1 -type f` | grep -v 't$')  >> ../opd_lab0/output.txt 2>> ../opd_lab0/output.txt
+
+echo "	4 task:"  >> ../opd_lab0/output.txt
+(cat -n `find . -type f -name 'e*'` | sort -rk 2)  >> ../opd_lab0/output.txt
+
+echo "	5 task:"  >> ../opd_lab0/output.txt
+(wc -l `find scrafty7 -type f` | sort -rnk 1)  >> ../opd_lab0/output.txt
+
+echo "	6 task:"  >> ../opd_lab0/output.txt
+(ls -lRS | grep rygon | grep -v -e "total" -e "^./" | sort -unk 5 | tail -n 3)  >> ../opd_lab0/output.txt
+
+#
+#	Часть 5
+#
+
+rm -f porygon23
+rm -f sneasel5/porygonz
+rm -f Copy_7
+rm -f sneasel5/porygonzwatchog
+rm -rf lopunny3
+rmdir sneasel5/espeon
+pwd # debug - выводит текущую директорию в stdout
+
+#
+#	Копия Часть 2
+#
+
+chmod 752 lopunny3
+chmod 624 lopunny3/ekans
+chmod a=---,u=r lopunny3/bayleef
+chmod a=---,u=rw lopunny3/chimecho
+chmod 062 magmar7
+chmod a=r porygon23
+chmod 315 scrafty7
+chmod 512 scrafty7/electivire
+chmod 305 scrafty7/pupitar
+chmod 400 scrafty7/luxray
+chmod 330 scrafty7/weedle
+chmod 777 scrafty7/blastoise
+chmod 777 sneasel5
+chmod 044 sneasel5/misdreavus
+chmod 511 sneasel5/espeon
+chmod 440 sneasel5/luxio
+chmod 006 sneasel5/croagunk
+chmod 400 sneasel5/porygonz
+chmod 400 watchog0
+pwd # debug

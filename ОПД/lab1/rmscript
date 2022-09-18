@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cd ..
+chmod -R 700 lab0
+rm -rf lab0
+rm -f opd_lab0/output.txt
+rm -f opd_lab0/hierarchy.txt
