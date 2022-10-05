@@ -42,7 +42,7 @@ public class Main {
         {
             for(int j = 0; j < 17; j++)
             {
-                System.out.printf("%7.5f\t", ans[i][j]);
+                System.out.printf("%7.5f ", ans[i][j]);
             }
             System.out.printf("%n");
         }
