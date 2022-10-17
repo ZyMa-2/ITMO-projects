@@ -55,7 +55,6 @@ echo "Возможности	Overland=7 Surface=6 Jump=4 Power=2" >> croagunk
 echo "Intelligence=4" >> croagunk
 echo "Тип покемона	NORMAL MODE" >> porygonz
 cd ..
-pwd # debug - выводит текущую директорию в stdout
 
 #
 #	Часть 2
@@ -63,8 +62,8 @@ pwd # debug - выводит текущую директорию в stdout
 
 chmod 752 lopunny3
 chmod 624 lopunny3/ekans
-chmod a=---,u=r lopunny3/bayleef
-chmod a=---,u=rw lopunny3/chimecho
+chmod a-rwx,u+r lopunny3/bayleef
+chmod a-rwx,u+rw lopunny3/chimecho
 chmod 062 magmar7
 chmod a=r porygon23
 chmod 315 scrafty7
@@ -80,25 +79,30 @@ chmod 440 sneasel5/luxio
 chmod 006 sneasel5/croagunk
 chmod 400 sneasel5/porygonz
 chmod 400 watchog0
-pwd # debug - выводит текущую директорию в stdout
 
 #
 #	Часть 3
 #
 
-chmod -R 700 .
 touch ../opd_lab0/hierarchy.txt	
 
 cp porygon23 sneasel5/misdreavusporygon2
 ln watchog0 sneasel5/porygonzwatchog
 cat scrafty7/luxray lopunny3/chimecho > watchog0_77
-ln -s sneasel5 Copy_7
-ln -s /home/studs/s373750/lab0/watchog0 scrafty7/luxraywatchog
+ln -s ~/lab0/sneasel5 ~/lab0/Copy_7
+ln -s ~/lab0/watchog0 ~/lab0/scrafty7/luxraywatchog
 cp -r lopunny3 scrafty7/blastoise/
 cp watchog0 scrafty7/pupitar/
 
-ls -lR >> ../opd_lab0/hierarchy.txt
-pwd # debug - выводит текущую директорию в stdout
+chmod 500 scrafty7
+chmod 500 scrafty7/pupitar
+chmod 500 scrafty7/weedle
+
+ls -lR > ../opd_lab0/hierarchy.txt
+
+chmod 315 scrafty7
+chmod 305 scrafty7/pupitar
+chmod 330 scrafty7/weedle
 
 #
 #	Часть 4
@@ -109,23 +113,23 @@ touch output.txt
 cd ..
 cd lab0
 
-echo "	1 task:"  >> ../opd_lab0/output.txt 2>> ../opd_lab0/output.txt
-(wc -l `find . -type f -name 'e*'` | sort -rnk 1)  >> ../opd_lab0/output.txt 2>> ../opd_lab0/output.txt
+echo "	1 task:"  >> ../opd_lab0/output.txt
+(echo **/* | grep "e.*$" | xargs wc -l | sort -rnk 1)  >> ../opd_lab0/output.txt 2>> ../opd_lab0/output.txt
 
-echo "	2 task:"  >> ../opd_lab0/output.txt 2>> ../opd_lab0/output.txt
-(ls -R lopunny3 | sort)  >> ../opd_lab0/output.txt 2>> ../opd_lab0/output.txt
+echo "	2 task:"  >> ../opd_lab0/output.txt
+(ls -R lopunny3 | sort)  >> ../opd_lab0/output.txt 2>&1
 
-echo "	3 task:"  >> ../opd_lab0/output.txt 2>> ../opd_lab0/output.txt
-(cat `find scrafty7 -maxdepth 1 -type f` | grep -v 't$')  >> ../opd_lab0/output.txt 2>> ../opd_lab0/output.txt
+echo "	3 task:"  >> ../opd_lab0/output.txt
+(cat scrafty7/* | grep -v 't$')  >> ../opd_lab0/output.txt 2>> ../opd_lab0/output.txt
 
 echo "	4 task:"  >> ../opd_lab0/output.txt
-(cat -n `find . -type f -name 'e*'` | sort -rk 2)  >> ../opd_lab0/output.txt
+(echo **/* | grep "e.*$" | xargs cat -n | sort -rk 2)  >> ../opd_lab0/output.txt 2>/dev/null
 
 echo "	5 task:"  >> ../opd_lab0/output.txt
-(wc -l `find scrafty7 -type f` | sort -rnk 1)  >> ../opd_lab0/output.txt
+(wc -l scrafty7/* | sort -rnk 1)  >> ../opd_lab0/output.txt 2>/dev/null
 
 echo "	6 task:"  >> ../opd_lab0/output.txt
-(ls -lRS | grep rygon | grep -v -e "total" -e "^./" | sort -unk 5 | tail -n 3)  >> ../opd_lab0/output.txt
+(ls -lRS | grep rygon | grep -v -e "total" -e "^./" | sort -unk 5 | tail -n 3)  >> ../opd_lab0/output.txt 2>/dev/null
 
 #
 #	Часть 5
@@ -137,29 +141,3 @@ rm -f Copy_7
 rm -f sneasel5/porygonzwatchog
 rm -rf lopunny3
 rmdir sneasel5/espeon
-pwd # debug - выводит текущую директорию в stdout
-
-#
-#	Копия Часть 2
-#
-
-chmod 752 lopunny3
-chmod 624 lopunny3/ekans
-chmod a=---,u=r lopunny3/bayleef
-chmod a=---,u=rw lopunny3/chimecho
-chmod 062 magmar7
-chmod a=r porygon23
-chmod 315 scrafty7
-chmod 512 scrafty7/electivire
-chmod 305 scrafty7/pupitar
-chmod 400 scrafty7/luxray
-chmod 330 scrafty7/weedle
-chmod 777 scrafty7/blastoise
-chmod 777 sneasel5
-chmod 044 sneasel5/misdreavus
-chmod 511 sneasel5/espeon
-chmod 440 sneasel5/luxio
-chmod 006 sneasel5/croagunk
-chmod 400 sneasel5/porygonz
-chmod 400 watchog0
-pwd # debug

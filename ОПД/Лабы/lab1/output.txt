@@ -1,25 +1,51 @@
 	1 task:
-       2 total
-       1 ./scrafty7/blastoise/lopunny3/ekans
-       1 ./lopunny3/ekans
+wc: Copy_7/croagunk: open: Permission denied
+wc: Copy_7/espeon: read: Is a directory
+wc: Copy_7/misdreavus: open: Permission denied
+wc: sneasel5/croagunk: open: Permission denied
+wc: sneasel5/espeon: read: Is a directory
+wc: sneasel5/misdreavus: open: Permission denied
+      20 total
+       4 sneasel5/porygonzwatchog
+       4 Copy_7/porygonzwatchog
+       2 sneasel5/luxio
+       2 lopunny3/bayleef
+       2 Copy_7/luxio
+       1 sneasel5/porygonz
+       1 sneasel5/misdreavusporygon2
+       1 lopunny3/ekans
+       1 lopunny3/chimecho
+       1 Copy_7/porygonz
+       1 Copy_7/misdreavusporygon2
 	2 task:
 bayleef
 chimecho
 ekans
 	3 task:
-Развитые
-способности	Guts
+cat: scrafty7/*: No such file or directory
 	4 task:
+     1	Ходы
+     1	Ходы
+     1	Тип Покемона	PSYCHIC NONE
+     1	Тип покемона	NORMAL MODE
+     1	Тип покемона	NORMAL MODE
+     1	Способности	Overcharge Intimidate
+     1	Способности	Overcharge Intimidate
+     1	Живет	Urban
+     1	Живет	Urban
      1	Живет	Grassland Marsh
-     1	Живет	Grassland Marsh
+     1	Живет	Forest
+     2	Rivalry
+     2	Rivalry
+     3	Ice Punch Iron Tail Knock Off Last Resort Low Kick≠ Seed Bomb Signal
+     3	Ice Punch Iron Tail Knock Off Last Resort Low Kick≠ Seed Bomb Signal
+     2	Grassland
+     4	Beam Sleep Talk Snore Super Fang Thunderpunch Zen Headbutt
+     4	Beam Sleep Talk Snore Super Fang Thunderpunch Zen Headbutt
+     2	After You Aqua Tail Covet Endeavor Fire Punch Gunk Shot Helping Hand
+     2	After You Aqua Tail Covet Endeavor Fire Punch Gunk Shot Helping Hand
 	5 task:
-      10 total
-       4 scrafty7/pupitar/watchog0
-       2 scrafty7/luxray
-       2 scrafty7/blastoise/lopunny3/bayleef
-       1 scrafty7/blastoise/lopunny3/ekans
-       1 scrafty7/blastoise/lopunny3/chimecho
 	6 task:
--rwx------  1 s373750  studs   17 18 сент. 14:25 porygon23
--rwx------  1 s373750  studs   36 18 сент. 14:25 porygonz
--rwx------  2 s373750  studs  208 18 сент. 14:25 porygonzwatchog
+-r--r--r--  1 s373750  studs   17 17 окт.  21:09 porygon23
+-r--------  1 s373750  studs   36 17 окт.  21:09 porygonz
+-r--------  2 s373750  studs  208 17 окт.  21:09 porygonzwatchog

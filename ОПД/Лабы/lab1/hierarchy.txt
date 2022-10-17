@@ -1,57 +1,57 @@
 total 4
-lrwxr-xr-x  1 s373750  studs    8 18 сент. 14:25 Copy_7 -> sneasel5
-drwx------  2 s373750  studs    5 18 сент. 14:25 lopunny3
--rwx------  1 s373750  studs  116 18 сент. 14:25 magmar7
--rwx------  1 s373750  studs   17 18 сент. 14:25 porygon23
-drwx------  6 s373750  studs    8 18 сент. 14:25 scrafty7
-drwx------  3 s373750  studs    9 18 сент. 14:25 sneasel5
--rwx------  2 s373750  studs  208 18 сент. 14:25 watchog0
--rw-r--r--  1 s373750  studs   82 18 сент. 14:25 watchog0_77
+lrwxr-xr-x  1 s373750  studs   33 17 окт.  21:09 Copy_7 -> /home/studs/s373750/lab0/sneasel5
+drwxr-x-w-  2 s373750  studs    5 17 окт.  21:09 lopunny3
+----rw--w-  1 s373750  studs  116 17 окт.  21:09 magmar7
+-r--r--r--  1 s373750  studs   17 17 окт.  21:09 porygon23
+dr-x------  6 s373750  studs    8 17 окт.  21:09 scrafty7
+drwxrwxrwx  3 s373750  studs    9 17 окт.  21:09 sneasel5
+-r--------  2 s373750  studs  208 17 окт.  21:09 watchog0
+-rw-r--r--  1 s373750  studs   82 17 окт.  21:09 watchog0_77
 
 ./lopunny3:
 total 2
--rwx------  1 s373750  studs  28 18 сент. 14:25 bayleef
--rwx------  1 s373750  studs  37 18 сент. 14:25 chimecho
--rwx------  1 s373750  studs  27 18 сент. 14:25 ekans
+-r--------  1 s373750  studs  28 17 окт.  21:09 bayleef
+-rw-------  1 s373750  studs  37 17 окт.  21:09 chimecho
+-rw--w-r--  1 s373750  studs  27 17 окт.  21:09 ekans
 
 ./scrafty7:
 total 3
-drwx------  3 s373750  studs   3 18 сент. 14:25 blastoise
-drwx------  2 s373750  studs   2 18 сент. 14:25 electivire
--rwx------  1 s373750  studs  45 18 сент. 14:25 luxray
-lrwxr-xr-x  1 s373750  studs  33 18 сент. 14:25 luxraywatchog -> /home/studs/s373750/lab0/watchog0
-drwx------  2 s373750  studs   3 18 сент. 14:25 pupitar
-drwx------  2 s373750  studs   2 18 сент. 14:25 weedle
+drwxrwxrwx  3 s373750  studs   3 17 окт.  21:09 blastoise
+dr-x--x-w-  2 s373750  studs   2 17 окт.  21:09 electivire
+-r--------  1 s373750  studs  45 17 окт.  21:09 luxray
+lrwxr-xr-x  1 s373750  studs  33 17 окт.  21:09 luxraywatchog -> /home/studs/s373750/lab0/watchog0
+dr-x------  2 s373750  studs   3 17 окт.  21:09 pupitar
+dr-x------  2 s373750  studs   2 17 окт.  21:09 weedle
 
 ./scrafty7/blastoise:
 total 1
-drwx------  2 s373750  studs  5 18 сент. 14:25 lopunny3
+drwxr-x---  2 s373750  studs  5 17 окт.  21:09 lopunny3
 
 ./scrafty7/blastoise/lopunny3:
 total 2
--rwx------  1 s373750  studs  28 18 сент. 14:25 bayleef
--rwx------  1 s373750  studs  37 18 сент. 14:25 chimecho
--rwx------  1 s373750  studs  27 18 сент. 14:25 ekans
+-r--------  1 s373750  studs  28 17 окт.  21:09 bayleef
+-rw-------  1 s373750  studs  37 17 окт.  21:09 chimecho
+-rw----r--  1 s373750  studs  27 17 окт.  21:09 ekans
 
 ./scrafty7/electivire:
 total 0
 
 ./scrafty7/pupitar:
 total 1
--rwx------  1 s373750  studs  208 18 сент. 14:25 watchog0
+-r--------  1 s373750  studs  208 17 окт.  21:09 watchog0
 
 ./scrafty7/weedle:
 total 0
 
 ./sneasel5:
 total 4
--rwx------  1 s373750  studs   74 18 сент. 14:25 croagunk
-drwx------  2 s373750  studs    2 18 сент. 14:25 espeon
--rwx------  1 s373750  studs   53 18 сент. 14:25 luxio
--rwx------  1 s373750  studs   35 18 сент. 14:25 misdreavus
--rwx------  1 s373750  studs   17 18 сент. 14:25 misdreavusporygon2
--rwx------  1 s373750  studs   36 18 сент. 14:25 porygonz
--rwx------  2 s373750  studs  208 18 сент. 14:25 porygonzwatchog
+-------rw-  1 s373750  studs   74 17 окт.  21:09 croagunk
+dr-x--x--x  2 s373750  studs    2 17 окт.  21:09 espeon
+-r--r-----  1 s373750  studs   53 17 окт.  21:09 luxio
+----r--r--  1 s373750  studs   35 17 окт.  21:09 misdreavus
+-r--r--r--  1 s373750  studs   17 17 окт.  21:09 misdreavusporygon2
+-r--------  1 s373750  studs   36 17 окт.  21:09 porygonz
+-r--------  2 s373750  studs  208 17 окт.  21:09 porygonzwatchog
 
 ./sneasel5/espeon:
 total 0
