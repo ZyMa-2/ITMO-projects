@@ -25,7 +25,7 @@ Too lazy to describe these, but here is some manuals 💂‍♂️:
     > cat << "хватит" > /home/serge/text
   
 - Заменить `chmod 700` на что-то адекватное (минимально необходимые права)  
-  + todo
+  + done
   
 - Как работает \` ...  \`  
   + [manual 3](https://vds-admin.ru/shell-scripting/sluzhebnye-simvoly#revkav_)
@@ -45,6 +45,7 @@ Too lazy to describe these, but here is some manuals 💂‍♂️:
 - 4.2 сделать перенаправление 2 потока в 1
   + [manual 3](https://vds-admin.ru/shell-scripting/sluzhebnye-simvoly#perenapr_)
   + `2>&1` - 2 поток в 1 перенаправляется
+  + done
 - Минимальные права на директорию/файл для просмотра аттрибутов файлов  
   + [random link](https://help.ubuntu.ru/wiki/%D1%81%D1%82%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D1%82%D0%BD%D1%8B%D0%B5_%D0%BF%D1%80%D0%B0%D0%B2%D0%B0_unix)
   + | Mask    | Права на файл                | Права на каталог                                                                  |
