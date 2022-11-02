@@ -1,0 +1,2 @@
+Main-Class: ponomaryov.mikhail.Lab2
+Class-Path: src/Pokemon.jar
