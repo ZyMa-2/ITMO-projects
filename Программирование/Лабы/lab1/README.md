@@ -56,7 +56,7 @@ jdb Main.java
 
 `System.out.printf("%7.5f ", ans[i][j]);` - Whole thing is given 7 characters, 5 characters precision, float
 
-## Questions from teacher
+## Questions
 
 - Рассказать что есть Set и его реализации, либо переделать на использование Arrays  
   Bruh
