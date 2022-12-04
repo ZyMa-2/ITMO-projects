@@ -7,5 +7,6 @@ Lab about LaTeX
 - https://www.overleaf.com/learn/latex/Spacing_in_math_mode
 - https://latex.codecogs.com/eqneditor/editor.php - editor чисто для LaTeX формул
 - https://habr.com/ru/company/ruvds/blog/574352/
+- https://www.tablesgenerator.com/# - editor чисто для LaTeX таблиц
 # Моя лаба совственно
  ` https://ru.overleaf.com/read/ngjyxvhsjmvb `
