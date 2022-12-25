@@ -1,0 +1,31 @@
+digraph "lab3" {
+
+splines  = ortho;
+fontname = "Inconsolata";
+
+node [colorscheme = ylgnbu4];
+edge [colorscheme = dark28, dir = both];
+
+Action          [shape = record, pos = "9.974,6.213!"     , label = "{ \<\<interface\>\>\nAction | + make_action(String) : void\l + make_action(String, Essence) : void\l }"];
+AnimateObject   [shape = record, pos = "6.151,7.571!"     , label = "{ AnimateObject | + AnimateObject(String) : \l|+ wants_to_do(String) : void\l + stare_at(Essence) : void\l }"];
+Berry           [shape = record, pos = "-0.144,13.409!"   , label = "{ Berry | + Berry(String, Color) : \l + Berry(String) : \l|- color : Color\l|+ toString() : String\l + getColor() : Color\l + crush_into(Essence) : void\l + hashCode() : int\l }"];
+Bush            [shape = record, pos = "4.239,10.876!"    , label = "{ Bush | + Bush(String) : \l|+ filledWith(Essence) : void\l + grow() : void\l }"];
+Color           [shape = record, pos = "-2.973,12.279!"   , label = "{ \<\<enumeration\>\>\nColor | + Color() : \l|+ YELLOW : \l + NONE : \l + BLUE : \l|+ valueOf(String) : Color\l + values() : Color[]\l }"];
+Essence         [shape = record, pos = "2.745,5.027!"     , label = "{ Essence | + Essence(String) : \l|- name : String\l|+ getName() : String\l + equals(Object) : boolean\l + hashCode() : int\l + make_action(String, Essence) : void\l + make_action(String) : void\l + toString() : String\l }"];
+InanimateObject [shape = record, pos = "1.991,7.883!"     , label = "{ InanimateObject | + InanimateObject(String) : \l|- state : String\l|+ getState() : String\l + announce_state() : void\l + setState(String) : void\l }"];
+Main            [shape = record, pos = "-0.356,5.027!"    , label = "{ Main | + Main() : \l|+ main(String[]) : void\l }"];
+State           [shape = record, pos = "-1.543,9.153!"    , label = "{ \<\<interface\>\>\nState | + announce_state() : void\l + setState(String) : void\l + getState() : String\l }"];
+
+AnimateObject   -> Essence         [color = "#000082", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+Berry           -> Color           [color = "#595959", style = solid , arrowtail = diamond , arrowhead = vee     , taillabel = "1", label = "", headlabel = "color\n1"];
+Berry           -> InanimateObject [color = "#000082", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+Bush            -> InanimateObject [color = "#000082", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+Essence         -> Action          [color = "#008200", style = dashed, arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+InanimateObject -> Essence         [color = "#000082", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+InanimateObject -> State           [color = "#008200", style = dashed, arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+Main            -> AnimateObject   [color = "#595959", style = dashed, arrowtail = none    , arrowhead = vee     , taillabel = "", label = "«create»", headlabel = ""];
+Main            -> Berry           [color = "#595959", style = dashed, arrowtail = none    , arrowhead = vee     , taillabel = "", label = "«create»", headlabel = ""];
+Main            -> Bush            [color = "#595959", style = dashed, arrowtail = none    , arrowhead = vee     , taillabel = "", label = "«create»", headlabel = ""];
+Main            -> InanimateObject [color = "#595959", style = dashed, arrowtail = none    , arrowhead = vee     , taillabel = "", label = "«create»", headlabel = ""];
+
+}
