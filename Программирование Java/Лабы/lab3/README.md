@@ -23,6 +23,7 @@ Lab about SOLID, classes, interfaces, abstract classes, enums
 ## Useful information
 - [habr SOLID principles explanation](https://habr.com/ru/post/688530/)
 - [SOLID в картинках](https://temofeev.ru/info/articles/printsipy-solid-v-kartinkakh/)
+- [lab3 manual](https://docs.google.com/document/d/1WO35u1oghBAqWufyZskjRVzDzj3kBPDhayFb41ZB6HU/edit)
 - interface used for defining object behaviour
 - abstract classes supposted to have abstract methods :p
 - To create project structure just write down your thoughts and start doing someting (time managment mistake)
