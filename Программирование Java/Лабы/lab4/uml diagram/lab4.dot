@@ -1,0 +1,65 @@
+digraph "lab4" {
+
+splines  = ortho;
+fontname = "Inconsolata";
+
+node [colorscheme = ylgnbu4];
+edge [colorscheme = dark28, dir = both];
+
+Actionable                [shape = record, pos = "6.888,22.528!"    , label = "{ \<\<interface\>\>\nActionable | + makeAction(String, Essence) : void\l + makeAction(String) : void\l + makeAction(String, Essence[]) : void\l }"];
+AlreadyBlossomedException [shape = record, pos = "17.088,12.993!"   , label = "{ AlreadyBlossomedException | + AlreadyBlossomedException(String) : \l|- message : String\l| message : String\l }"];
+Berry                     [shape = record, pos = "10.698,6.597!"    , label = "{ Berry | + Berry(String, Color) : \l + Berry(String) : \l|- color : Color\l|+ crushInto(Essence) : void\l| color : Color\l  fullName : String\l }"];
+Bloomable                 [shape = record, pos = "15.074,12.674!"   , label = "{ \<\<interface\>\>\nBloomable | + blossom() : void\l }"];
+Bush                      [shape = record, pos = "13.809,5.972!"    , label = "{ Bush | + Bush(String) : \l|+ filledWith(Essence) : void\l }"];
+Color                     [shape = record, pos = "12.582,13.139!"   , label = "{ \<\<enumeration\>\>\nColor | - Color(String) : \l|+ toString() : String\l + valueOf(String) : Color\l + values() : Color[]\l }"];
+Crushable                 [shape = record, pos = "12.010,9.646!"    , label = "{ \<\<interface\>\>\nCrushable | + crushInto(Essence) : void\l }"];
+Essence                   [shape = record, pos = "6.888,20.472!"    , label = "{ Essence | + Essence(String) : \l|- name : String\l|+ equals(Object) : boolean\l + makeAction(String) : void\l + toString() : String\l + makeAction(String, Essence) : void\l + makeAction(String, Essence[]) : void\l + hashCode() : int\l| name : String\l  fullName : String\l }"];
+Feelable                  [shape = record, pos = "1.354,9.799!"     , label = "{ \<\<interface\>\>\nFeelable | + changeMood(String) : void\l + announceMood() : void\l }"];
+Flower                    [shape = record, pos = "18.110,10.431!"   , label = "{ Flower | + Flower(String, Color) : \l + Flower(String) : \l|- color : Color\l|+ blossom() : void\l| color : Color\l  fullName : String\l }"];
+Fruit                     [shape = record, pos = "16.584,5.972!"    , label = "{ Fruit | + Fruit(String) : \l|+ ripen() : void\l }"];
+Growable                  [shape = record, pos = "21.431,15.424!"   , label = "{ \<\<interface\>\>\nGrowable | + grow() : void\l }"];
+InanimateObject           [shape = record, pos = "14.756,16.208!"   , label = "{ InanimateObject | + InanimateObject(String) : \l|- state : String\l|+ changeState(String) : void\l + announceState() : void\l| state : String\l  fullName : String\l }"];
+Main                      [shape = record, pos = "8.227,2.653!"     , label = "{ Main | + Main() : \l|+ main(String[]) : void\l }"];
+NameException             [shape = record, pos = "-1.271,9.646!"    , label = "{ NameException | + NameException(String) : \l }"];
+Person                    [shape = record, pos = "-0.761,7.361!"    , label = "{ Person | + Person(String) : \l|- mood : String\l|+ changeMood(String) : void\l + wantsToDo(String) : void\l + visualize(String) : void\l + remember(String) : void\l + stareAt(Essence) : void\l + announceMood() : void\l + think(String) : void\l| mood : String\l  fullName : String\l }"];
+Plant                     [shape = record, pos = "20.574,12.833!"   , label = "{ Plant | + Plant(String) : \l|+ grow() : void\l }"];
+Rememberable              [shape = record, pos = "4.104,9.646!"     , label = "{ \<\<interface\>\>\nRememberable | + remember(String) : void\l }"];
+Stateable                 [shape = record, pos = "14.825,19.229!"   , label = "{ \<\<interface\>\>\nStateable | + changeState(String) : void\l + announceState() : void\l }"];
+StoryGenerator            [shape = record, pos = "-1.569,0.958!"    , label = "{ \<\<interface\>\>\nStoryGenerator | + generateOutput() : void\l }"];
+Thinkable                 [shape = record, pos = "9.104,9.646!"     , label = "{ \<\<interface\>\>\nThinkable | + think(String) : void\l }"];
+Visualizeable             [shape = record, pos = "6.674,9.646!"     , label = "{ \<\<interface\>\>\nVisualizeable | + visualize(String) : void\l }"];
+
+Berry                     -> Color                     [color = "#595959", style = solid , arrowtail = diamond , arrowhead = vee     , taillabel = "1", label = "", headlabel = "color\n1"];
+Berry                     -> Crushable                 [color = "#008200", style = dashed, arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+Berry                     -> InanimateObject           [color = "#000082", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+Bush                      -> Plant                     [color = "#000082", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+Essence                   -> Actionable                [color = "#008200", style = dashed, arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+Flower                    -> AlreadyBlossomedException [color = "#595959", style = dashed, arrowtail = none    , arrowhead = vee     , taillabel = "", label = "«create»", headlabel = ""];
+Flower                    -> Bloomable                 [color = "#008200", style = dashed, arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+Flower                    -> Color                     [color = "#595959", style = solid , arrowtail = diamond , arrowhead = vee     , taillabel = "1", label = "", headlabel = "color\n1"];
+Flower                    -> Plant                     [color = "#000082", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+Fruit                     -> Flower                    [color = "#820000", style = solid , arrowtail = odot    , arrowhead = none    , taillabel = "", label = "", headlabel = ""];
+Fruit                     -> Plant                     [color = "#000082", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+InanimateObject           -> Essence                   [color = "#000082", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+InanimateObject           -> Stateable                 [color = "#008200", style = dashed, arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+Main                      -> Berry                     [color = "#595959", style = dashed, arrowtail = none    , arrowhead = vee     , taillabel = "", label = "«create»", headlabel = ""];
+Main                      -> Berry                     [color = "#595959", style = solid , arrowtail = diamond , arrowhead = vee     , taillabel = "1", label = "", headlabel = "plums\n*"];
+Main                      -> Bush                      [color = "#595959", style = dashed, arrowtail = none    , arrowhead = vee     , taillabel = "", label = "«create»", headlabel = ""];
+Main                      -> Bush                      [color = "#595959", style = solid , arrowtail = diamond , arrowhead = vee     , taillabel = "1", label = "", headlabel = "bushes\n1"];
+Main                      -> Flower                    [color = "#595959", style = dashed, arrowtail = none    , arrowhead = vee     , taillabel = "", label = "«create»", headlabel = ""];
+Main                      -> Fruit                     [color = "#595959", style = dashed, arrowtail = none    , arrowhead = vee     , taillabel = "", label = "«create»", headlabel = ""];
+Main                      -> InanimateObject           [color = "#595959", style = solid , arrowtail = diamond , arrowhead = vee     , taillabel = "1", label = "", headlabel = "manuscript\n1"];
+Main                      -> InanimateObject           [color = "#595959", style = dashed, arrowtail = none    , arrowhead = vee     , taillabel = "", label = "«create»", headlabel = ""];
+Main                      -> Person                    [color = "#595959", style = solid , arrowtail = diamond , arrowhead = vee     , taillabel = "1", label = "", headlabel = "character\n1"];
+Main                      -> Person                    [color = "#595959", style = dashed, arrowtail = none    , arrowhead = vee     , taillabel = "", label = "«create»", headlabel = ""];
+Main                      -> Plant                     [color = "#595959", style = dashed, arrowtail = none    , arrowhead = vee     , taillabel = "", label = "«create»", headlabel = ""];
+Person                    -> Essence                   [color = "#000082", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+Person                    -> Feelable                  [color = "#008200", style = dashed, arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+Person                    -> NameException             [color = "#595959", style = dashed, arrowtail = none    , arrowhead = vee     , taillabel = "", label = "«create»", headlabel = ""];
+Person                    -> Rememberable              [color = "#008200", style = dashed, arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+Person                    -> Thinkable                 [color = "#008200", style = dashed, arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+Person                    -> Visualizeable             [color = "#008200", style = dashed, arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+Plant                     -> Growable                  [color = "#008200", style = dashed, arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+Plant                     -> InanimateObject           [color = "#000082", style = solid , arrowtail = none    , arrowhead = normal  , taillabel = "", label = "", headlabel = ""];
+
+}
